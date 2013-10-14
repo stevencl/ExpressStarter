@@ -1,0 +1,23 @@
+#---------------------------------------------------------
+# Copyright (C) Microsoft Corporation. All rights reserved.
+#---------------------------------------------------------
+
+# controls whether stdout and stderr streams from node processes are captured and made available over HTTP
+loggingEnabled: true
+
+# default log settings from iis node
+maxLogFileSizeInKB: 128
+maxTotalLogFileSizeInKB: 1024
+maxLogFiles: 20
+
+# controls if an error on the sandbox from iis node should return a 500 (false) or 200 (true) status code
+devErrorsEnabled: false
+
+# delay in milliseconds between connection retries (leave this high in case monaco needs long to startup)
+namedPipeConnectionRetryDelay: 1000
+
+# controls whether the built-in debugger is available
+debuggingEnabled: false
+
+# controls to send a debug header for a request that includes detailed timing information about the request
+debugHeaderEnabled: false

@@ -205,6 +205,7 @@ app.configure('development', function () {
 **/
 require('./routes/home')(app);
 require('./routes/account')(app);
+require('./routes/test')(app);
 
 
 var server = http.createServer(app);

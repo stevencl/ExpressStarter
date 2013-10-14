@@ -1,3 +1,5 @@
+/// <reference path="jquery.d.ts" />
+
 var socket = null;
 
 $(function() {
@@ -9,7 +11,7 @@ $(function() {
   
   socket.on('connect', function () {
     socket.emit('setname', name);
-    $("#chat").append($("<div class=\"system\">you have joined the party</div>"));
+    $("#chat").append($("<div class=\"system\">you have joined the party</div>")).css("background-color", "azure");
   });
 
 
