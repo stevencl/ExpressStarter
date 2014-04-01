@@ -15,6 +15,8 @@ var express = require('express')
 
 /**
 * CONFIGURATION
+*
+* Added some more comments
 * -------------------------------------------------------------------------------------------------
 * load configuration settings from ENV, then settings.json.  Contains keys for OAuth logins. See 
 * settings.example.json.  
